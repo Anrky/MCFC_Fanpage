@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/join_css.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <title>Man City FC</title>
+  </head>
+  <body>
+    <div class="container1">
+      <header>
+        <div class="header_container">
+          <div class="header_start">
+            <div class="cont" onclick="location.href='./BE18F05F051.html'">
+              <div class="logo">
+                <img src="./img/logo.png" alt="main logo" />
+              </div>
+              <h2 class="heighlight">Manchester City</h2>
+            </div>
+          </div>
+          <div class="menu_toggle"></div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./BE18F05F051.html">Home</a></li>
+            <li><a href="./join.html" class="active">Join</a></li>
+            <li><a href="./honour.html">HONOURS</a></li>
+          </ul>
+        </nav>
+        <div class="clearFix"></div>
+      </header>
+    </div>
+    <main>
+      <div class="container">
+        <div class="intro_container">
+          <div class="contact_img">
+            <img src="./img/background.jpg" alt="" />
+          </div>
+          <div class="intro">
+            <h1>Join Us</h1>
+            <p>City 'til I Die</p>
+          </div>
+        </div>
+        <form name="join" netlify>
+          <div class="names">
+            <div class="first_name">
+              <input
+                name="First name"
+                type="text"
+                placeholder="First Name*"
+                maxlength="20"
+                required
+              />
+            </div>
+            <div class="last_name">
+              <input
+                name="Last name"
+                type="text"
+                placeholder="Last Name*"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+          <div class="email_container">
+            <div class="email">
+              <input
+                type="email"
+                name="Email"
+                id=""
+                placeholder="Email*"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+          <div class="un_container">
+            <div class="username">
+              <input
+                type="text"
+                name="Username"
+                id=""
+                placeholder="Username*"
+                maxlength="20"
+              />
+            </div>
+          </div>
+          <div class="bio">
+            <h2>Bio:</h2>
+            <div class="main_textbox_container">
+              <div class="textbox_container">
+                <textarea
+                  name="bio"
+                  id=""
+                  placeholder="Bio*"
+                  maxlength="1000"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <div class="foot">
+          <p>
+            "<span class="heighlight">Manchester City FC Ltd 2020</span>-BE18F05F051
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/expand_menu.js"></script>
+    <script src="./js/join_js.js"></script>
+  </body>
+</html>

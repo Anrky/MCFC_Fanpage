@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: #e2e8e9;
+}
+.container1 {
+  background-color: #8ac2db;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+.clearFix {
+  clear: both;
+}
+.header_container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+  margin: auto;
+}
+header .header_start {
+  display: flex;
+  align-items: center;
+}
+
+header .cont {
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.cont:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.heighlight {
+  color: #ffffff;
+}
+
+.logo {
+  width: 60px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 100%;
+}
+
+nav {
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  border-radius: 5px;
+  margin: 0 25px;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7.5px 12.5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #5f9fd3;
+  color: #ffffff;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+.active {
+  background: rgb(255, 255, 255);
+}
+
+/* Main Content */
+
+.container {
+  width: 788px;
+  height: 769px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+main {
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.main_left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main_left h1 {
+  margin-bottom: 55px;
+  font-weight: 300;
+}
+
+.cta-android {
+  border: 2px solid #002847;
+  color: white;
+  background: #8ac2db;
+  font-size: 16px;
+  width: 150px;
+  font-weight: 500;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 4px;
+  margin-top: 20px;
+  box-shadow: 0px 1px 1px gray;
+}
+
+.cta-android:hover {
+  transform: scale(1.1);
+}
+
+.main_right {
+  flex: 1;
+  margin-left: 25px;
+}
+
+.right_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 579px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.right_img_container img {
+  width: 100%;
+  border-radius: 15px;
+  filter: drop-shadow(0px 1px 1px black);
+}
+
+/* * */
+
+/* Footer */
+
+footer {
+  padding: 5px;
+  background-color: #002847;
+  color: white;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot p {
+  flex: 1;
+  text-align: center;
+}
+.foot h5 {
+  flex: 1;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*  */
+
+@media screen and (max-width: 1100px) {
+  header {
+    width: 100%;
+  }
+  nav {
+    flex: 1;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu_toggle {
+    display: block;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #5f9fd3;
+    transition: 0.2s;
+  }
+  nav {
+    flex: 0;
+    align-self: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header_container {
+    width: 100%;
+  }
+  header .header_start {
+    flex: 1;
+  }
+  .menu_toggle:hover {
+    transform: scale(1.2);
+  }
+  .menu_toggle::before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    color: #5f9fd3;
+    line-height: 40px;
+  }
+  nav {
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 5px 10px;
+  }
+
+  .container1 {
+    position: static;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main_left {
+    flex: 0;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .main_left h1 {
+    font-size: 25px;
+  }
+  .main_left p {
+    font-size: 14px;
+  }
+
+  .main_right {
+    flex: 0;
+    margin: 0;
+  }
+  .right_img_container img {
+    width: 330px;
+  }
+  .container {
+    width: 97%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main_left {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main_left h1 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .main_left p {
+    font-size: 13px;
+  }
+  .cta-android {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .right_img_container img {
+    width: 280px;
+  }
+  .foot p {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+  }
+  .foot h5 {
+    flex: 1;
+    font-weight: 300;
+    text-align: center;
+    font-size: 10px;
+  }
+}
